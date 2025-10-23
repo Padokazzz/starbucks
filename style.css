@@ -2,7 +2,63 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
-    color: #333;
+    
+}
+body{
+    background-image: url(./images/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+section{
+    height: 100vh;
+   
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    padding: 80px;
+    color: white;
+
+    & img{
+        width: 100px;
+    }
+    & h2{
+        margin-top: 20px;
+        font-size: 50px;
+        margin-right: 70px;
+    }
+    & span{
+        color: green;
+    }
+    & p{
+        margin-top: 20px;
+        font-size: 15px;
+        margin-right: 120px;
+    }
+    & button{
+        margin-top: 20px;
+        width: 180px;
+        height: 40px;
+        font-size: 20px;
+        background-color: green;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}
+.copo{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 85%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+
+    & img{
+        width: 300px;
+    }
 }
