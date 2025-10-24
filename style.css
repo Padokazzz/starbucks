@@ -4,15 +4,13 @@
     box-sizing: border-box;
     color: white;
     font-family: "Poppins", sans-serif;
+    overflow: hidden;
 }
 body{
     background-image: url(./images/fundo.jpg);
     background-size: cover;
     background-position: center;
-    font-family: sans-serif;
     margin: 0;
-    padding: 40px;
-    height: 100vh;
 }
 .logo{
     width: 80px;
@@ -21,11 +19,19 @@ body{
 }
 section{
     display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 40px;
+    padding-bottom: 0;
+}
+.content{
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items:center;
+    padding-top: 40px;
 }
-.content{
+.texto{
     width: 600px;
     padding-right: 60px;
  
@@ -33,7 +39,7 @@ section{
 h2{
     font-size: 60px;
     font-weight: 600;
-    margin-bottom: 20px;
+    
 }
 h2 span{
     color: green;
@@ -47,5 +53,41 @@ button{
     border-radius: 30px;
     cursor: pointer;
 }
+
+.copo img{
+    padding-top: 180px;
+    width: 250px;
+    z-index: -1;
+}
+.copos {
+    width: 400px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+}
+.copos img{
+    width: 60px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.circulo {
+    background-color: #017143;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px);
+    z-index: -1;
+}
+
+
 
 
